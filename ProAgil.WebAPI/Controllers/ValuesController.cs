@@ -41,8 +41,6 @@ namespace ProAgil.WebAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            
-
             try
             {
                 var results = await  _context.Eventos.FirstOrDefaultAsync(x => x.EventoId == id);
